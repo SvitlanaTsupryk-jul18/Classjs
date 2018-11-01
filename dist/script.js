@@ -30,7 +30,7 @@ function () {
 
     this.quantity = quantity;
     this.ratioWithProto = ratioWithProto;
-    this.sign = '$';
+    this.sign = sign;
   } // геттер
 
 
@@ -64,14 +64,14 @@ function (_Currency) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dollar).call(this, quantity, ratioWithProto, sign));
     Dollar.count += 1;
-    _this._quantprop = quantprop;
+    _this._quantity = quantity;
     return _this;
   }
 
   _createClass(Dollar, [{
-    key: "quantprop",
+    key: "qquantity",
     get: function get() {
-      return "".concat((this._quantprop, this.sigh));
+      return "".concat((this._quantity, this.sigh));
     } // static count() {
     // return this.count;
     // }
@@ -99,7 +99,7 @@ function (_Currency2) {
   return Canadian;
 }(Currency);
 
-console.log();
+console.log(Canadian);
 
 var Hryvna =
 /*#__PURE__*/
@@ -116,6 +116,7 @@ function (_Currency3) {
 }(Currency);
 
 console.log(Hryvna);
+console.log(Dollar.count);
 var dol = new Dollar(10);
 console.log(dol.quantity);
 var dcan = new Canadian(20);
