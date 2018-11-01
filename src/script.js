@@ -22,10 +22,10 @@ class Dollar extends Currency {
     constructor() {
         super(quantity, ratioWithProto, sign);
         Dollar.count += 1;
-        this._quantprop = quantity;
+        this._quantity = quantity;
     }
-    get quantprop() {
-            return `${this._quantprop,this.sigh}`;
+    get quantity() {
+            return `${this._quantity,this.sigh}`;
         }
         // static count() {
         // return this.count;
