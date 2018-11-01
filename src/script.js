@@ -4,7 +4,7 @@ class Currency {
     constructor(quantity = 1, ratioWithProto = 1, sign = "$") {
         this.quantity = quantity;
         this.ratioWithProto = ratioWithProto;
-        this.sign = '$';
+        this.sign = sign;
     }
 
     // геттер
@@ -22,7 +22,7 @@ class Dollar extends Currency {
     constructor() {
         super(quantity, ratioWithProto, sign);
         Dollar.count += 1;
-        this._quantprop = quantprop;
+        this._quantprop = quantity;
     }
     get quantprop() {
             return `${this._quantprop,this.sigh}`;
